@@ -1,0 +1,8 @@
+{
+  "name": "create",
+  "version": "1.0.0",
+  "description": "practice",
+  "main": "index.js",
+  "author": "BVH",
+  "license": "MIT"
+}
