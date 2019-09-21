@@ -4,5 +4,8 @@
   "description": "practice",
   "main": "index.js",
   "author": "BVH",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "jquery": "^3.4.1"
+  }
 }

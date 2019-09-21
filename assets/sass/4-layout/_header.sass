@@ -1,0 +1,17 @@
+@charset "UTF-8"
+#header
+  border: 2px solid map-get($scheme, "accent")
+  color: map-get($scheme, "secondarytext")
+  height: 30vh
+  display: flex
+  background: map-get($scheme, "darkprimary")
+  +center(center,center)
+  margin: 2em
+
+  +tablet
+    width: 100%
+
+  .header
+    font-size: 6rem
+    font-family: $font-stack-consolas
+    text-shadow: 2px 1px 3px map-get($scheme, accent)

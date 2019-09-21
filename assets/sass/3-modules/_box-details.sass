@@ -1,0 +1,26 @@
+.col-6
+  $color: $tundora
+  background-color: $color
+  color: set-bg-text-color($color)
+
+.box
+  background-color: map-get($scheme, "light-primary")
+  max-width: 400px
+  min-width: 300px
+  margin-top: 1em
+  border-width: 2px
+  border-style: solid
+
+  .str
+    color: unique-id()
+  +tablet
+    max-width: 100%
+    min-width: 100%
+    margin: 5px 0
+  +mobile
+    max-width: 100%
+    min-width: 100%
+    margin: 5px 0
+
+  &-skeleton
+    margin: 1rem

@@ -33,3 +33,23 @@
 
 	&:nth-child(#{$cols}n)
 		margin-right: 0
+
+=simple-grad($color1, $color2)
+	background: linear-gradient($color1, $color2)
+
+=angle-grad($angle, $color, $color1)
+	background: linear-gradient($angle, $color, $color1)
+
+//map $browncolors
+@for $i from 1 through length($browncolors)
+	.font-brown-#{$i}
+		color: nth($browncolors, $i)
+
+
+@for $i from 1 through length($browncolors)
+	.border-brown-#{$i}
+		border-color: nth($browncolors, $i)
+
+@for $i from 1 through length($browncolors)
+	.bg-brown-#{$i}
+		background-color: nth($browncolors, $i)

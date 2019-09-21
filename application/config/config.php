@@ -23,35 +23,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = '';
+$config['base_url'] = 'http://localhost/create';
 
-/*
-|--------------------------------------------------------------------------
-| Index File
-|--------------------------------------------------------------------------
-|
-| Typically this will be your index.php file, unless you've renamed it to
-| something else. If you are using mod_rewrite to remove the page set this
-| variable so that it is blank.
-|
-*/
-$config['index_page'] = 'index.php';
 
-/*
-|--------------------------------------------------------------------------
-| URI PROTOCOL
-|--------------------------------------------------------------------------
-|
-| This item determines which server global should be used to retrieve the
-| URI string.  The default setting of 'REQUEST_URI' works for most servers.
-| If your links do not seem to work, try one of the other delicious flavors:
-|
-| 'REQUEST_URI'    Uses $_SERVER['REQUEST_URI']
-| 'QUERY_STRING'   Uses $_SERVER['QUERY_STRING']
-| 'PATH_INFO'      Uses $_SERVER['PATH_INFO']
-|
-| WARNING: If you set this to 'PATH_INFO', URIs will always be URL-decoded!
-*/
+$config['index_page'] = '';
+
+
 $config['uri_protocol']	= 'REQUEST_URI';
 
 /*
@@ -324,7 +301,7 @@ $config['cache_query_string'] = FALSE;
 | https://codeigniter.com/user_guide/libraries/encryption.html
 |
 */
-$config['encryption_key'] = '';
+$config['encryption_key'] = 'hex2bin(2a288195428b06f691b48993c37acac3)';
 
 /*
 |--------------------------------------------------------------------------
@@ -400,7 +377,7 @@ $config['sess_regenerate_destroy'] = FALSE;
 |       'cookie_httponly') will also affect sessions.
 |
 */
-$config['cookie_prefix']	= '';
+$config['cookie_prefix']	= 'cooked';
 $config['cookie_domain']	= '';
 $config['cookie_path']		= '/';
 $config['cookie_secure']	= FALSE;

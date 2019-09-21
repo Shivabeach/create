@@ -1,0 +1,1 @@
+"use strict";!function(){var e=document.createElement("button"),t=document.createAttribute("id");t.value="some-value",e.setAttributeNode(t),e.innerHTML="Click me",document.querySelector(".click").appendChild(e)}();
