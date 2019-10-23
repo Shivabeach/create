@@ -32,3 +32,9 @@ $grid-max-width: 65em
 @each $size, $wide in $map1
 	.input-#{$size}
 		width: $wide
+
+@function weight($num)
+	@return  ($num * 50)
+@for $i from 1 through 15
+	.bold-#{$i}
+		font-weight: weight($i)

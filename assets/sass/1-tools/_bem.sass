@@ -1,0 +1,22 @@
+/* attempts at a different style */
+// body > p 	Select p tags that are only immediate children (can't be nested)
+// h1 + p 	Select the p sibling immediately following the h1 tag
+// h1 ~ pre 	Find all pre that follow the h1 tag
+
+
+.card-container
+  //height: 300px
+  width: 100%
+
+  &--skeleton
+    margin: 2rem
+    border-style: solid
+    border-width: 2px
+    background: $md-yellow-800
+    > p.skeleton--content
+      color: $md-blue-900
+      margin: 1em
+    > h3.skeleton--head
+      color: green
+      +center(center, center)
+

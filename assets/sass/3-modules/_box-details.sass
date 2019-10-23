@@ -1,18 +1,15 @@
-.col-6
-  $color: $tundora
-  background-color: $color
-  color: set-bg-text-color($color)
-
+@charset "UTF-8"
 .box
   background-color: map-get($scheme, "light-primary")
   max-width: 400px
   min-width: 300px
-  margin-top: 1em
+  margin: 1em 0
   border-width: 2px
   border-style: solid
+  outline: 5px solid darken(map-get($scheme, "accent"), 30)
+  outline-offset: -10px
+  border-radius: $base-border-radius
 
-  .str
-    color: unique-id()
   +tablet
     max-width: 100%
     min-width: 100%
@@ -24,3 +21,4 @@
 
   &-skeleton
     margin: 1rem
+

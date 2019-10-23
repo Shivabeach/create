@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
 $font-stack-helvetica: "Helvetica Neue", "Helvetica", "Arial", sans-serif
 
 $font-stack-lucida-grande: "Lucida Grande", "Lucida Sans Unicode", "Geneva", "Verdana", sans-serif
@@ -18,6 +20,10 @@ $font-stack-monaco: "Monaco", "Consolas", "Lucida Console", monospace
 
 $font-stack-gill: "Poor Richard Regular"
 
+$font-stack-fu: 'Fugaz One', cursive
+
+$font-stack-raleway: Raleway
+
 html,
 body
   box-sizing: border-box
@@ -33,9 +39,8 @@ $base-duration: 150ms
 $base-timing: ease
 
 //constants
-$base-font-size: 18px
-
-$base-font-family: $font-stack-gill
+//$base-font-size: 18px
+$base-font-family: $font-stack-raleway
 $heading-font-family: $font-stack-georgia
 
 // Line height
@@ -47,7 +52,49 @@ $base-border-radius: 6px
 $base-spacing: 1.5em
 $small-spacing: $base-spacing / 2
 $base-z-index: 0
+// From bootstrap
+$font-size-base:              1rem
+$font-size-lg:                $font-size-base * 3.5
 
-$map1: (small: 10%, med: 30%, med-lg: 50%, large: 75%, full: 100%)
+$font-weight-lighter:         lighter
+$font-weight-light:           300
+$font-weight-normal:          400
+$font-weight-bold:            700
+$font-weight-bolder:          bolder
+
+$font-weight-base:            $font-weight-normal
+$line-height-base:            1.5
+
+// $h1-font-size:                $font-size-base * 2.5
+// $h2-font-size:                $font-size-base * 2
+// $h3-font-size:                $font-size-base * 1.75
+// $h4-font-size:                $font-size-base * 1.5
+// $h5-font-size:                $font-size-base * 1.25
+// $h6-font-size:                $font-size-base
+
+$headings-margin-bottom:      $base-spacing / 2
+$headings-font-family:        $font-stack-fu
+$headings-font-weight:        500
+$headings-line-height:        1.2
+$headings-color:              null
+
+$display1-size:               6rem
+$display2-size:               5.5rem
+$display3-size:               4.5rem
+$display4-size:               3.5rem
+
+$display1-weight:             300
+$display2-weight:             300
+$display3-weight:             300
+$display4-weight:             300
+$display-line-height:         $headings-line-height
+
+$lead-font-size:              $font-size-base * 1.25
+$lead-font-weight:            300
+
+$small-font-size:             80%
+
+$text-muted:                  $md-grey-600
+
 
 

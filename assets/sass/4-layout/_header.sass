@@ -1,4 +1,5 @@
 @charset "UTF-8"
+
 #header
   border: 2px solid map-get($scheme, "accent")
   color: map-get($scheme, "secondarytext")
@@ -7,11 +8,15 @@
   background: map-get($scheme, "darkprimary")
   +center(center,center)
   margin: 2em
+  border-radius: $base-border-radius
 
   +tablet
     width: 100%
 
   .header
-    font-size: 6rem
-    font-family: $font-stack-consolas
+    background: map-get($scheme, primary)
+    padding: 35px
     text-shadow: 2px 1px 3px map-get($scheme, accent)
+    outline: 10px solid rgba(205,220,57,0.5)
+    outline-offset: -20px
+

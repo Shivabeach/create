@@ -6,5 +6,70 @@ p
   padding: 0 0 1rem 0
   margin: 0
 
-button
+article > * + *
+  margin-top: 1em
+
+input,
+button,
+textarea,
+select
+  font: inherit
   color: map-get($scheme, "secondarytext")
+
+.button,
+button,
+dd,
+dt,
+li
+	margin-bottom: 1.0rem
+
+fieldset,
+input,
+select,
+textarea
+	margin-bottom: 1.5rem
+
+blockquote,
+dl,
+figure,
+form,
+ol,
+p,
+pre,
+table,
+ul
+	margin-bottom: 2.5rem
+
+blockquote
+	border-left: .3rem solid $orange8
+	margin-left: 0
+	margin-right: 0
+	padding: 1rem 1.5rem
+
+	*:last-child
+		margin-bottom: 0
+
+code
+	background: map-get($scheme, "light-primary")
+	border-radius: .4rem
+	font-size: 86%
+	margin: 0 .2rem
+	padding: .2rem .5rem
+	white-space: nowrap
+
+pre
+	background: map-get($scheme, "light-primary")
+	border-left: .3rem solid $md-indigo-700
+	overflow-y: hidden
+
+	& > code
+		border-radius: 0
+		display: block
+		padding: 1rem 1.5rem
+		white-space: pre
+
+hr
+	border: 0
+	border-top: .1rem solid $md-indigo-700
+	margin: 3.0rem 0
+

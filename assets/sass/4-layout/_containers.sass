@@ -2,12 +2,13 @@
 
 .container
   background   : map-get($scheme, "darkprimary")
-  height       : 70vh
+  height       : auto
   border: 2px solid map-get($scheme, "accent")
   margin       : 2em
   display      : flex
   flex-wrap    : wrap
   justify-content: space-around
+  border-radius: $base-border-radius
 
   +tablet
     width: 100%
