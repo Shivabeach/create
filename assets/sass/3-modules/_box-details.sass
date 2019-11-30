@@ -22,3 +22,24 @@
   &-skeleton
     margin: 1rem
 
+.box_flex
+  flex: 1
+  background-color: map-get($scheme, "light-primary")
+  border-width: 2px
+  border-style: solid
+  outline: 5px solid darken(map-get($scheme, "accent"), 30)
+  outline-offset: -10px
+  border-radius: $base-border-radius
+
+  &-skeleton
+    margin: 1rem
+    a:link
+      color: $md-pink-a700
+      text-decoration: none
+    a:visited
+      color: $orange9
+    a:hover
+      color: $md-indigo-800
+      text-decoration: underline
+    a:active
+      color: $md-red-900

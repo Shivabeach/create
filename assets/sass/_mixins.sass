@@ -47,16 +47,6 @@
 		color: nth($browncolors, $i)
 
 
-@for $i from 1 through length($browncolors)
-	.border-brown-#{$i}
-		border-color: nth($browncolors, $i)
-		border-style: solid
-		border-width: 2px
-
-@for $i from 1 through length($browncolors)
-	.bg-brown-#{$i}
-		background-color: nth($browncolors, $i)
-
 =bodys()
 	min-height: 100vh
   scroll-behavior: smooth;

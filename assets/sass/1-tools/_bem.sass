@@ -6,17 +6,21 @@
 
 .card-container
   //height: 300px
-  width: 100%
+  //width: 100%
+  display: flex
 
   &--skeleton
     margin: 2rem
     border-style: solid
     border-width: 2px
-    background: $md-yellow-800
-    > p.skeleton--content
+    background: white
+    flex: 1
+    > .skeleton--content
       color: $md-blue-900
       margin: 1em
     > h3.skeleton--head
       color: green
       +center(center, center)
+
+
 
