@@ -5,21 +5,21 @@
 
 
 .card-container
-  //height: 300px
-  //width: 100%
   display: flex
+  background: map-get($theme, "extra")
 
   &--skeleton
     margin: 2rem
     border-style: solid
     border-width: 2px
-    background: white
+    background: map-get($theme, "secondary")
     flex: 1
+    box-shadow: 0 10px 10px 0 $base-light, 10px 0 10px 0 $base3-normal
     > .skeleton--content
       color: $md-blue-900
       margin: 1em
     > h3.skeleton--head
-      color: green
+      color: $md-teal-900
       +center(center, center)
 
 

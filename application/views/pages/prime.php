@@ -1,14 +1,14 @@
 <!-- controller pages/index -->
-<menu>
+<!-- <menu>
   <ul id="menu">
     <li class="inline"><a href="pages">Home</a></li>
   </ul>
-</menu>
+</menu> -->
 <header id="header">
   <div class="header large"><?php echo $top; ?></div>
 </header>
 
-<main class="container">
+<main class="container" role="main">
 
   <section class="box ideas">
     <article class="box-skeleton">
@@ -66,7 +66,7 @@
     </article>
   </section>
 </main>
-<main class="container">
+<main class="container" role="main">
   <section class="card-container">
     <article class="card-container--skeleton">
     <h3 class="skeleton--head">Record Inputs</h3>

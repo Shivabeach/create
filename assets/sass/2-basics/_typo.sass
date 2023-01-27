@@ -1,8 +1,9 @@
 
 .title
+  background: map-get($brownish, "hi-light")
   text-align: center
   border-bottom: 3px solid map-get($scheme, secondarytext)
-  text-shadow: 1px 1px 1px map-get($scheme, secondarytext)
+  text-shadow: 1px 2px 6px map-get($scheme, primarytext)
 
 .xlarge
   font-size: 7.478rem
@@ -27,9 +28,12 @@ h4
 h5
   font-size: 1.333rem
 
-small,
-.text_small
-  font-size: 0.75rem
+small
+  font-size: $small-font-size
+
+.text-small
+  @extend small
+  color: $text-muted
 
 h1,
 h2,

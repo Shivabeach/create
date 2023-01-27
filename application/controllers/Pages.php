@@ -24,7 +24,7 @@ class Pages extends CI_Controller {
             $data['topics'] = $query;
         }
         $data['content'] = "pages/prime2";
-        $data['top'] = "The Topic";
+        $data['top'] = ucfirst($this->uri->segment(3));
         $data['title'] = "Topic Page";
         $this->load->view("template/template", $data);
     }

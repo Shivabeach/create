@@ -1,12 +1,13 @@
 @charset "UTF-8"
 
 a
-  color: $akaroa1
+  color: map-get($brownish, "dark")
   text-decoration: none
   font-family: $font-stack-monaco
   transition: color $base-duration $base-timing
   &:visited
     color: darken($akaroa1, 30)
+    text-shadow: 1px 1px 3px map-get($brownish, "dark")
   &:active
     color: $french-lilac
   &:hover

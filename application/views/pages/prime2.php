@@ -14,12 +14,13 @@
         <?php if (isset($topics)) : ?>
           <?php foreach ($topics as $list) : ?>
             <dt><?php echo nice_date($list->date, "F d Y"); ?> </dt>
-            <dd><?php echo auto_typography($list->data); ?> </dd>
+            <dd class="checker"><?php echo auto_typography($list->data); ?> </dd>
           <?php endforeach; ?>
         <?php else : ?>
-          <h2>No Data</h2>
+          <h2 class="ui-state-error">No Data</h2>
         <?php endif; ?>
       </dl>
     </article>
+
   </section>
 </main>
